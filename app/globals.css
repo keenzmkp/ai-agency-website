@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS personnalisées */
+:root {
+  --color-primary: #0ea5e9;
+  --color-secondary: #64748b;
+  --color-accent: #eab308;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  --shadow-medium: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-hard: 0 10px 40px -10px rgba(0, 0, 0, 0.15), 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles de base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Styles pour les liens */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #0284c7;
+}
+
+/* Styles pour les boutons */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500 shadow-medium hover:shadow-hard;
+}
+
+.btn-secondary {
+  @apply bg-secondary-100 text-secondary-700 hover:bg-secondary-200 focus:ring-secondary-500;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white focus:ring-primary-500;
+}
+
+.btn-ghost {
+  @apply text-primary-500 hover:bg-primary-50 focus:ring-primary-500;
+}
+
+.btn-lg {
+  @apply px-8 py-4 text-base;
+}
+
+.btn-sm {
+  @apply px-4 py-2 text-xs;
+}
+
+/* Styles pour les cartes */
+.card {
+  @apply bg-white rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 border border-gray-100;
+}
+
+.card-hover {
+  @apply hover:-translate-y-1 hover:shadow-hard;
+}
+
+/* Styles pour les sections */
+.section {
+  @apply py-16 lg:py-24;
+}
+
+.section-sm {
+  @apply py-12 lg:py-16;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Styles pour les animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.6s ease-out;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.6s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.6s ease-out;
+}
+
+/* Styles pour les gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+}
+
+/* Styles pour les effets de survol */
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-2;
+}
+
+.hover-glow {
+  @apply transition-all duration-300 hover:shadow-glow;
+}
+
+/* Styles pour les formulaires */
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+/* Styles pour les icônes */
+.icon {
+  @apply w-5 h-5;
+}
+
+.icon-sm {
+  @apply w-4 h-4;
+}
+
+.icon-lg {
+  @apply w-6 h-6;
+}
+
+.icon-xl {
+  @apply w-8 h-8;
+}
+
+/* Styles pour les badges */
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.badge-primary {
+  @apply bg-primary-100 text-primary-800;
+}
+
+.badge-secondary {
+  @apply bg-secondary-100 text-secondary-800;
+}
+
+.badge-success {
+  @apply bg-success-100 text-success-800;
+}
+
+.badge-warning {
+  @apply bg-warning-100 text-warning-800;
+}
+
+.badge-error {
+  @apply bg-error-100 text-error-800;
+}
+
+/* Styles pour les séparateurs */
+.divider {
+  @apply border-t border-gray-200;
+}
+
+.divider-dashed {
+  @apply border-t border-dashed border-gray-300;
+}
+
+/* Styles pour les listes */
+.list-custom {
+  @apply space-y-3;
+}
+
+.list-custom li {
+  @apply flex items-start space-x-3;
+}
+
+.list-custom li::before {
+  @apply flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2;
+  content: '';
+}
+
+/* Styles pour les modales */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4;
+}
+
+.modal-content {
+  @apply bg-white rounded-xl shadow-hard max-w-md w-full max-h-[90vh] overflow-y-auto;
+}
+
+/* Styles pour les tooltips */
+.tooltip {
+  @apply absolute z-10 px-3 py-2 text-sm text-white bg-gray-900 rounded-lg shadow-lg opacity-0 invisible transition-all duration-300;
+}
+
+.tooltip::after {
+  @apply absolute w-2 h-2 bg-gray-900 transform rotate-45;
+  content: '';
+}
+
+/* Styles pour les notifications */
+.notification {
+  @apply fixed top-4 right-4 z-50 max-w-sm w-full bg-white rounded-lg shadow-hard border-l-4 p-4;
+}
+
+.notification-success {
+  @apply border-success-500;
+}
+
+.notification-error {
+  @apply border-error-500;
+}
+
+.notification-warning {
+  @apply border-warning-500;
+}
+
+.notification-info {
+  @apply border-primary-500;
+}
+
+/* Styles pour les tableaux */
+.table {
+  @apply w-full border-collapse;
+}
+
+.table th {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200;
+}
+
+.table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900 border-b border-gray-200;
+}
+
+/* Styles pour les paginations */
+.pagination {
+  @apply flex items-center justify-between px-4 py-3 bg-white border-t border-gray-200;
+}
+
+.pagination-button {
+  @apply relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50;
+}
+
+.pagination-button.active {
+  @apply bg-primary-500 text-white border-primary-500;
+}
+
+/* Styles pour les onglets */
+.tabs {
+  @apply border-b border-gray-200;
+}
+
+.tab {
+  @apply px-6 py-3 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700 hover:border-gray-300;
+}
+
+.tab.active {
+  @apply text-primary-500 border-primary-500;
+}
+
+/* Styles pour les accordéons */
+.accordion {
+  @apply border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.accordion-header {
+  @apply w-full px-6 py-4 text-left font-medium text-gray-900 bg-gray-50 hover:bg-gray-100 transition-colors duration-200;
+}
+
+.accordion-content {
+  @apply px-6 py-4 text-gray-600 border-t border-gray-200;
+}
+
+/* Styles pour les carrousels */
+.carousel {
+  @apply relative overflow-hidden;
+}
+
+.carousel-item {
+  @apply absolute inset-0 transition-transform duration-500 ease-in-out;
+}
+
+.carousel-item.active {
+  @apply relative;
+}
+
+/* Styles pour les spinners */
+.spinner {
+  @apply animate-spin rounded-full border-2 border-gray-300 border-t-primary-500;
+}
+
+.spinner-sm {
+  @apply w-4 h-4;
+}
+
+.spinner-md {
+  @apply w-6 h-6;
+}
+
+.spinner-lg {
+  @apply w-8 h-8;
+}
+
+/* Styles pour les progress bars */
+.progress {
+  @apply w-full bg-gray-200 rounded-full h-2;
+}
+
+.progress-bar {
+  @apply bg-primary-500 h-2 rounded-full transition-all duration-300;
+}
+
+/* Styles pour les avatars */
+.avatar {
+  @apply rounded-full bg-gray-200 flex items-center justify-center;
+}
+
+.avatar-sm {
+  @apply w-8 h-8 text-sm;
+}
+
+.avatar-md {
+  @apply w-10 h-10 text-base;
+}
+
+.avatar-lg {
+  @apply w-12 h-12 text-lg;
+}
+
+.avatar-xl {
+  @apply w-16 h-16 text-xl;
+}
+
+/* Styles pour les breadcrumbs */
+.breadcrumb {
+  @apply flex items-center space-x-2 text-sm text-gray-500;
+}
+
+.breadcrumb-item {
+  @apply hover:text-gray-700;
+}
+
+.breadcrumb-separator {
+  @apply text-gray-400;
+}
+
+/* Styles pour les alertes */
+.alert {
+  @apply p-4 rounded-lg border;
+}
+
+.alert-success {
+  @apply bg-success-50 border-success-200 text-success-800;
+}
+
+.alert-error {
+  @apply bg-error-50 border-error-200 text-error-800;
+}
+
+.alert-warning {
+  @apply bg-warning-50 border-warning-200 text-warning-800;
+}
+
+.alert-info {
+  @apply bg-primary-50 border-primary-200 text-primary-800;
+}
+
+/* Styles pour les stats */
+.stat {
+  @apply text-center;
+}
+
+.stat-value {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.stat-label {
+  @apply text-sm text-gray-500 mt-1;
+}
+
+/* Styles pour les témoignages */
+.testimonial {
+  @apply bg-white p-6 rounded-xl shadow-soft;
+}
+
+.testimonial-content {
+  @apply text-gray-600 mb-4 italic;
+}
+
+.testimonial-author {
+  @apply flex items-center space-x-3;
+}
+
+.testimonial-avatar {
+  @apply w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 font-semibold;
+}
+
+.testimonial-name {
+  @apply font-medium text-gray-900;
+}
+
+.testimonial-title {
+  @apply text-sm text-gray-500;
+}
+
+/* Styles pour les équipes */
+.team-member {
+  @apply text-center;
+}
+
+.team-avatar {
+  @apply w-24 h-24 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center text-2xl font-bold text-gray-600;
+}
+
+.team-name {
+  @apply text-lg font-semibold text-gray-900 mb-1;
+}
+
+.team-role {
+  @apply text-sm text-gray-500 mb-2;
+}
+
+.team-social {
+  @apply flex justify-center space-x-3;
+}
+
+/* Styles pour les projets */
+.project-card {
+  @apply bg-white rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 overflow-hidden;
+}
+
+.project-image {
+  @apply w-full h-48 bg-gray-200;
+}
+
+.project-content {
+  @apply p-6;
+}
+
+.project-title {
+  @apply text-xl font-semibold text-gray-900 mb-2;
+}
+
+.project-description {
+  @apply text-gray-600 mb-4;
+}
+
+.project-tags {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+.project-tag {
+  @apply px-3 py-1 bg-primary-100 text-primary-800 text-xs rounded-full;
+}
+
+/* Styles pour les services */
+.service-card {
+  @apply bg-white p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 text-center;
+}
+
+.service-icon {
+  @apply w-16 h-16 mx-auto mb-4 bg-primary-100 rounded-full flex items-center justify-center text-primary-600;
+}
+
+.service-title {
+  @apply text-xl font-semibold text-gray-900 mb-3;
+}
+
+.service-description {
+  @apply text-gray-600 mb-4;
+}
+
+.service-features {
+  @apply text-left space-y-2;
+}
+
+.service-feature {
+  @apply flex items-center space-x-2 text-sm text-gray-600;
+}
+
+.service-feature::before {
+  @apply w-2 h-2 bg-success-500 rounded-full;
+  content: '';
+}
+
+/* Styles pour les CTA */
+.cta {
+  @apply bg-primary-500 text-white py-16 lg:py-24;
+}
+
+.cta-content {
+  @apply text-center max-w-3xl mx-auto;
+}
+
+.cta-title {
+  @apply text-3xl lg:text-4xl font-bold mb-4;
+}
+
+.cta-description {
+  @apply text-xl text-primary-100 mb-8;
+}
+
+.cta-buttons {
+  @apply flex flex-col sm:flex-row gap-4 justify-center;
+}
+
+/* Styles pour les footers */
+.footer {
+  @apply bg-gray-900 text-white py-12 lg:py-16;
+}
+
+.footer-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.footer-section {
+  @apply mb-8;
+}
+
+.footer-title {
+  @apply text-lg font-semibold mb-4;
+}
+
+.footer-links {
+  @apply space-y-2;
+}
+
+.footer-link {
+  @apply text-gray-300 hover:text-white transition-colors duration-200;
+}
+
+.footer-bottom {
+  @apply border-t border-gray-800 pt-8 mt-8 text-center text-gray-400;
+}
+
+/* Styles pour les headers */
+.header {
+  @apply bg-white shadow-soft sticky top-0 z-40;
+}
+
+.header-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.header-nav {
+  @apply flex items-center justify-between h-16;
+}
+
+.header-logo {
+  @apply text-2xl font-bold text-primary-500;
+}
+
+.header-menu {
+  @apply hidden md:flex items-center space-x-8;
+}
+
+.header-menu-mobile {
+  @apply md:hidden;
+}
+
+/* Styles pour les héros */
+.hero {
+  @apply relative py-20 lg:py-32 bg-gradient-to-br from-primary-500 to-primary-700 text-white;
+}
+
+.hero-content {
+  @apply max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8;
+}
+
+.hero-title {
+  @apply text-4xl lg:text-6xl font-bold mb-6;
+}
+
+.hero-description {
+  @apply text-xl lg:text-2xl text-primary-100 mb-8;
+}
+
+.hero-buttons {
+  @apply flex flex-col sm:flex-row gap-4 justify-center;
+}
+
+/* Styles pour les sections de contenu */
+.content-section {
+  @apply py-16 lg:py-24;
+}
+
+.content-title {
+  @apply text-3xl lg:text-4xl font-bold text-center mb-4;
+}
+
+.content-description {
+  @apply text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto;
+}
+
+/* Styles pour les grilles */
+.grid-custom-1 {
+  @apply grid grid-cols-1 gap-6;
+}
+
+.grid-custom-2 {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.grid-custom-3 {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.grid-custom-4 {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+}
+
+/* Styles pour les espacements */
+.space-y-1 > * + * {
+  @apply mt-1;
+}
+
+.space-y-2 > * + * {
+  @apply mt-2;
+}
+
+.space-y-3 > * + * {
+  @apply mt-3;
+}
+
+.space-y-4 > * + * {
+  @apply mt-4;
+}
+
+.space-y-6 > * + * {
+  @apply mt-6;
+}
+
+.space-y-8 > * + * {
+  @apply mt-8;
+}
+
+.space-y-12 > * + * {
+  @apply mt-12;
+}
+
+.space-y-16 > * + * {
+  @apply mt-16;
+}
+
+/* Styles pour les responsive */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-custom {
+    @apply px-4;
+  }
+  
+  .section {
+    @apply py-12;
+  }
+  
+  .section-sm {
+    @apply py-8;
+  }
+}
+
+/* Styles pour l'accessibilité */
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+}
+
+.focus-visible {
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+/* Styles pour les états de chargement */
+.loading {
+  @apply opacity-50 pointer-events-none;
+}
+
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* Styles pour les erreurs */
+.error {
+  @apply text-error-500 text-sm mt-1;
+}
+
+.error-input {
+  @apply border-error-500 focus:ring-error-500;
+}
+
+/* Styles pour les succès */
+.success {
+  @apply text-success-500 text-sm mt-1;
+}
+
+.success-input {
+  @apply border-success-500 focus:ring-success-500;
+}
+
+/* Styles pour les utilitaires */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Styles pour les animations personnalisées */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Styles pour les thèmes sombres */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #38bdf8;
+    --color-secondary: #94a3b8;
+  }
+  
+  body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+  }
+  
+  .card {
+    @apply bg-gray-800 border-gray-700;
+  }
+  
+  .form-input {
+    @apply bg-gray-800 border-gray-600 text-white;
+  }
+  
+  .form-textarea {
+    @apply bg-gray-800 border-gray-600 text-white;
+  }
+}
+
+/* Styles pour l'impression */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    color: #000 !important;
+    background: #fff !important;
+  }
+  
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+  }
+}
+
+/* Styles pour les navigateurs anciens */
+@supports not (display: grid) {
+  .grid-cols-1,
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    display: block;
+  }
+  
+  .grid-cols-1 > *,
+  .grid-cols-2 > *,
+  .grid-cols-3 > *,
+  .grid-cols-4 > * {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Styles pour les animations réduites */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Styles pour les contraste élevé */
+@media (prefers-contrast: high) {
+  .card {
+    border: 2px solid #000;
+  }
+  
+  .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Styles pour les focus visible */
+@supports selector(:focus-visible) {
+  .btn:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  .btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
