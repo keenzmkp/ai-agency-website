@@ -37,8 +37,8 @@ export default function HomePage() {
   const translations = {
     fr: {
       hero: {
-        title: 'Transformez votre entreprise avec l\'Intelligence Artificielle',
-        subtitle: 'Nous créons des solutions d\'automation IA sur mesure qui révolutionnent votre façon de travailler et propulsent votre croissance.',
+        title: 'Simplifiez vos processus, amplifiez votre impact.',
+        subtitle: 'Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n. Nous créons des solutions sur mesure qui transforment votre façon de travailler.',
         cta1: 'Découvrir nos services',
         cta2: 'Voir nos projets',
         stats: {
@@ -53,32 +53,26 @@ export default function HomePage() {
         }
       },
       services: {
-        title: 'Nos Services d\'Automation IA',
-        subtitle: 'Des solutions intelligentes pour automatiser vos processus métier et optimiser votre productivité.',
+        title: 'Nos Services',
+        subtitle: 'Des solutions complètes pour votre transformation digitale',
         items: [
-          {
-            icon: Brain,
-            title: 'Intelligence Artificielle',
-            description: 'Développement d\'algorithmes IA personnalisés pour vos besoins spécifiques.',
-            features: ['Machine Learning', 'Deep Learning', 'NLP', 'Computer Vision']
-          },
-          {
-            icon: Zap,
-            title: 'Automation des Processus',
-            description: 'Automatisation complète de vos workflows pour gagner en efficacité.',
-            features: ['RPA', 'Workflow Automation', 'API Integration', 'Data Processing']
-          },
           {
             icon: Code,
             title: 'Développement Web',
-            description: 'Applications web modernes et performantes avec les dernières technologies.',
-            features: ['React/Next.js', 'Node.js', 'Python/Django', 'Cloud Deployment']
+            description: 'Sites web professionnels, e-commerce et applications web sur mesure pour votre entreprise.',
+            features: ['Sites web business', 'E-commerce', 'Applications web personnalisées', 'Responsive design']
           },
           {
-            icon: BarChart3,
-            title: 'Analytics & BI',
-            description: 'Tableaux de bord intelligents et analyses prédictives pour vos données.',
-            features: ['Data Visualization', 'Predictive Analytics', 'Real-time Dashboards', 'KPI Tracking']
+            icon: Zap,
+            title: 'Automation avec n8n',
+            description: 'Automatisez vos workflows et connectez vos outils avec n8n pour optimiser vos processus.',
+            features: ['Workflows n8n', 'Intégrations populaires', 'Automatisation de tâches', 'Connecteurs API']
+          },
+          {
+            icon: Target,
+            title: 'Optimisation & Consulting',
+            description: 'Optimisation de vos processus métier et conseil stratégique pour améliorer votre efficacité.',
+            features: ['Audit de processus', 'Optimisation workflow', 'Conseil stratégique', 'Formation équipes']
           }
         ]
       },
@@ -120,7 +114,7 @@ export default function HomePage() {
             name: 'Marie Dubois',
             role: 'Directrice Marketing',
             company: 'TechCorp',
-            content: 'L\'automation IA mise en place par l\'Agence AI a révolutionné notre gestion des leads. Nous avons gagné 40% de temps sur nos processus marketing.',
+            content: 'L\'automation avec n8n mise en place par Vibrance Online a révolutionné notre gestion des leads. Nous avons gagné 40% de temps sur nos processus marketing.',
             rating: 5,
             avatar: 'MD'
           },
@@ -151,9 +145,9 @@ export default function HomePage() {
     },
     en: {
       hero: {
-        title: 'Transform Your Business with Artificial Intelligence',
-        subtitle: 'We create custom AI automation solutions that revolutionize your way of working and propel your growth.',
-        cta1: 'Discover our services',
+        title: 'Automate. Connect. Grow.',
+        subtitle: 'Vibrance Online is your partner for web development and automation with n8n. We create custom solutions that transform the way you work.',
+        cta1: 'Explore Our Services',
         cta2: 'View our projects',
         stats: {
           clients: '200+',
@@ -167,32 +161,26 @@ export default function HomePage() {
         }
       },
       services: {
-        title: 'Our AI Automation Services',
-        subtitle: 'Intelligent solutions to automate your business processes and optimize your productivity.',
+        title: 'Our Services',
+        subtitle: 'Complete solutions for your digital transformation',
         items: [
-          {
-            icon: Brain,
-            title: 'Artificial Intelligence',
-            description: 'Development of custom AI algorithms for your specific needs.',
-            features: ['Machine Learning', 'Deep Learning', 'NLP', 'Computer Vision']
-          },
-          {
-            icon: Zap,
-            title: 'Process Automation',
-            description: 'Complete automation of your workflows for increased efficiency.',
-            features: ['RPA', 'Workflow Automation', 'API Integration', 'Data Processing']
-          },
           {
             icon: Code,
             title: 'Web Development',
-            description: 'Modern and performant web applications with the latest technologies.',
-            features: ['React/Next.js', 'Node.js', 'Python/Django', 'Cloud Deployment']
+            description: 'Professional websites, e-commerce, and custom web applications for your business.',
+            features: ['Business websites', 'E-commerce', 'Custom web apps', 'Responsive design']
           },
           {
-            icon: BarChart3,
-            title: 'Analytics & BI',
-            description: 'Intelligent dashboards and predictive analytics for your data.',
-            features: ['Data Visualization', 'Predictive Analytics', 'Real-time Dashboards', 'KPI Tracking']
+            icon: Zap,
+            title: 'Automation with n8n',
+            description: 'Automate your workflows and connect your tools with n8n to optimize your processes.',
+            features: ['n8n workflows', 'Popular integrations', 'Task automation', 'API connectors']
+          },
+          {
+            icon: Target,
+            title: 'Process Optimization & Consulting',
+            description: 'Optimize your business processes and strategic consulting to improve your efficiency.',
+            features: ['Process audit', 'Workflow optimization', 'Strategic consulting', 'Team training']
           }
         ]
       },

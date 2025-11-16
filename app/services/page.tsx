@@ -34,51 +34,51 @@ import {
 
 export default function ServicesPage() {
   const [locale, setLocale] = useState('fr');
-  const [activeTab, setActiveTab] = useState('ai-automation');
+  const [activeTab, setActiveTab] = useState('n8n-automation');
 
   // Traductions
   const translations = {
     fr: {
       hero: {
-        title: 'Nos Services d\'Automation IA',
-        subtitle: 'Des solutions intelligentes pour automatiser vos processus métier et optimiser votre productivité.',
+        title: 'Nos Services',
+        subtitle: 'Des solutions complètes pour votre transformation digitale',
         cta: 'Découvrir nos services'
       },
       tabs: {
-        'ai-automation': 'Automation IA',
+        'n8n-automation': 'Automation avec n8n',
         'web-development': 'Développement Web',
-        'digital-consulting': 'Consulting Digital',
+        'digital-consulting': 'Optimisation & Consulting',
         'training': 'Formation'
       },
       services: {
-        'ai-automation': {
-          title: 'Automation Intelligence Artificielle',
-          subtitle: 'Révolutionnez vos processus métier avec nos solutions d\'IA sur mesure',
-          description: 'Nous développons des solutions d\'intelligence artificielle qui automatisent vos tâches répétitives, optimisent vos décisions et transforment votre façon de travailler.',
+        'n8n-automation': {
+          title: 'Automation avec n8n',
+          subtitle: 'Automatisez vos workflows et connectez vos outils avec n8n',
+          description: 'Nous créons des workflows n8n personnalisés qui automatisent vos processus métier, connectent vos applications et optimisent votre productivité. n8n est une plateforme open-source puissante pour l\'automation de workflows.',
           features: [
             {
-              icon: Brain,
-              title: 'Machine Learning',
-              description: 'Algorithmes d\'apprentissage automatique pour prédire et optimiser vos processus',
-              benefits: ['Prédictions précises', 'Optimisation continue', 'Apprentissage adaptatif']
+              icon: Zap,
+              title: 'Workflows n8n',
+              description: 'Création de workflows automatisés personnalisés pour vos processus métier',
+              benefits: ['Automatisation complète', 'Workflows visuels', 'Déclencheurs multiples', 'Actions conditionnelles']
             },
             {
-              icon: Zap,
-              title: 'RPA (Robotic Process Automation)',
-              description: 'Automatisation des tâches répétitives avec des robots logiciels intelligents',
-              benefits: ['Gain de temps', 'Réduction d\'erreurs', 'Processus standardisés']
+              icon: Globe,
+              title: 'Intégrations Populaires',
+              description: 'Connexion avec vos outils existants : CRM, email, bases de données, APIs',
+              benefits: ['Connecteurs natifs', 'Intégration API', 'Synchronisation de données', 'Webhooks']
             },
             {
               icon: Database,
               title: 'Traitement de Données',
-              description: 'Analyse et traitement intelligent de vos données pour extraire des insights',
-              benefits: ['Insights actionnables', 'Traitement en temps réel', 'Visualisation claire']
+              description: 'Transformation et traitement de données entre vos différents systèmes',
+              benefits: ['Transformation de données', 'Mapping automatique', 'Validation de données', 'Formatage']
             },
             {
               icon: Target,
-              title: 'Optimisation Prédictive',
-              description: 'Modèles prédictifs pour anticiper les tendances et optimiser vos ressources',
-              benefits: ['Anticipation des besoins', 'Optimisation des coûts', 'Planification intelligente']
+              title: 'Optimisation de Processus',
+              description: 'Identification et automatisation des tâches répétitives pour gagner en efficacité',
+              benefits: ['Gain de temps', 'Réduction d\'erreurs', 'Processus standardisés', 'Monitoring en temps réel']
             }
           ],
           process: [
@@ -89,13 +89,13 @@ export default function ServicesPage() {
             },
             {
               step: '02',
-              title: 'Conception IA',
-              description: 'Nous concevons une solution d\'IA adaptée à vos besoins spécifiques'
+              title: 'Conception Workflow',
+              description: 'Nous concevons des workflows n8n adaptés à vos besoins spécifiques'
             },
             {
               step: '03',
-              title: 'Développement',
-              description: 'Nous développons et testons votre solution d\'automation IA'
+              title: 'Développement & Test',
+              description: 'Nous développons et testons vos workflows n8n en environnement de test'
             },
             {
               step: '04',
@@ -111,10 +111,10 @@ export default function ServicesPage() {
               description: 'Parfait pour les petites entreprises',
               features: [
                 'Audit des processus',
-                'Solution d\'automation basique',
+                '3 workflows n8n basiques',
                 'Support par email',
                 'Formation de base',
-                'Rapports mensuels'
+                'Documentation'
               ]
             },
             professional: {
@@ -124,11 +124,11 @@ export default function ServicesPage() {
               description: 'Idéal pour les entreprises en croissance',
               features: [
                 'Tout du plan Starter',
-                'IA prédictive avancée',
+                '10 workflows n8n avancés',
                 'Support prioritaire',
                 'Formation complète',
-                'Rapports hebdomadaires',
-                'Intégrations personnalisées'
+                'Intégrations personnalisées',
+                'Monitoring et maintenance'
               ],
               popular: true
             },
@@ -139,12 +139,12 @@ export default function ServicesPage() {
               description: 'Solution complète pour les grandes entreprises',
               features: [
                 'Tout du plan Professional',
-                'IA sur mesure',
+                'Workflows n8n illimités',
                 'Support 24/7',
                 'Formation avancée',
-                'Rapports en temps réel',
                 'Intégrations complexes',
-                'Dédié account manager'
+                'Déploiement sur serveur dédié',
+                'Account manager dédié'
               ]
             }
           }
@@ -252,45 +252,45 @@ export default function ServicesPage() {
     },
     en: {
       hero: {
-        title: 'Our AI Automation Services',
-        subtitle: 'Intelligent solutions to automate your business processes and optimize your productivity.',
+        title: 'Our Services',
+        subtitle: 'Complete solutions for your digital transformation',
         cta: 'Discover our services'
       },
       tabs: {
-        'ai-automation': 'AI Automation',
+        'n8n-automation': 'Automation with n8n',
         'web-development': 'Web Development',
-        'digital-consulting': 'Digital Consulting',
+        'digital-consulting': 'Process Optimization & Consulting',
         'training': 'Training'
       },
       services: {
-        'ai-automation': {
-          title: 'Artificial Intelligence Automation',
-          subtitle: 'Revolutionize your business processes with our custom AI solutions',
-          description: 'We develop artificial intelligence solutions that automate your repetitive tasks, optimize your decisions and transform your way of working.',
+        'n8n-automation': {
+          title: 'Automation with n8n',
+          subtitle: 'Automate your workflows and connect your tools with n8n',
+          description: 'We create custom n8n workflows that automate your business processes, connect your applications, and optimize your productivity. n8n is a powerful open-source platform for workflow automation.',
           features: [
             {
-              icon: Brain,
-              title: 'Machine Learning',
-              description: 'Machine learning algorithms to predict and optimize your processes',
-              benefits: ['Accurate predictions', 'Continuous optimization', 'Adaptive learning']
+              icon: Zap,
+              title: 'n8n Workflows',
+              description: 'Creation of custom automated workflows for your business processes',
+              benefits: ['Complete automation', 'Visual workflows', 'Multiple triggers', 'Conditional actions']
             },
             {
-              icon: Zap,
-              title: 'RPA (Robotic Process Automation)',
-              description: 'Automation of repetitive tasks with intelligent software robots',
-              benefits: ['Time savings', 'Error reduction', 'Standardized processes']
+              icon: Globe,
+              title: 'Popular Integrations',
+              description: 'Connection with your existing tools: CRM, email, databases, APIs',
+              benefits: ['Native connectors', 'API integration', 'Data synchronization', 'Webhooks']
             },
             {
               icon: Database,
               title: 'Data Processing',
-              description: 'Intelligent analysis and processing of your data to extract insights',
-              benefits: ['Actionable insights', 'Real-time processing', 'Clear visualization']
+              description: 'Data transformation and processing between your different systems',
+              benefits: ['Data transformation', 'Automatic mapping', 'Data validation', 'Formatting']
             },
             {
               icon: Target,
-              title: 'Predictive Optimization',
-              description: 'Predictive models to anticipate trends and optimize your resources',
-              benefits: ['Anticipate needs', 'Cost optimization', 'Intelligent planning']
+              title: 'Process Optimization',
+              description: 'Identification and automation of repetitive tasks to increase efficiency',
+              benefits: ['Time savings', 'Error reduction', 'Standardized processes', 'Real-time monitoring']
             }
           ],
           process: [
@@ -301,13 +301,13 @@ export default function ServicesPage() {
             },
             {
               step: '02',
-              title: 'AI Design',
-              description: 'We design an AI solution tailored to your specific needs'
+              title: 'Workflow Design',
+              description: 'We design n8n workflows tailored to your specific needs'
             },
             {
               step: '03',
-              title: 'Development',
-              description: 'We develop and test your AI automation solution'
+              title: 'Development & Testing',
+              description: 'We develop and test your n8n workflows in a test environment'
             },
             {
               step: '04',
@@ -323,10 +323,10 @@ export default function ServicesPage() {
               description: 'Perfect for small businesses',
               features: [
                 'Process audit',
-                'Basic automation solution',
+                '3 basic n8n workflows',
                 'Email support',
                 'Basic training',
-                'Monthly reports'
+                'Documentation'
               ]
             },
             professional: {
@@ -336,11 +336,11 @@ export default function ServicesPage() {
               description: 'Ideal for growing businesses',
               features: [
                 'Everything from Starter plan',
-                'Advanced predictive AI',
+                '10 advanced n8n workflows',
                 'Priority support',
                 'Complete training',
-                'Weekly reports',
-                'Custom integrations'
+                'Custom integrations',
+                'Monitoring and maintenance'
               ],
               popular: true
             },
@@ -351,11 +351,11 @@ export default function ServicesPage() {
               description: 'Complete solution for large enterprises',
               features: [
                 'Everything from Professional plan',
-                'Custom AI',
+                'Unlimited n8n workflows',
                 '24/7 support',
                 'Advanced training',
-                'Real-time reports',
                 'Complex integrations',
+                'Dedicated server deployment',
                 'Dedicated account manager'
               ]
             }
@@ -504,8 +504,8 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        {/* Process (only for AI Automation) */}
-        {serviceKey === 'ai-automation' && 'process' in service && service.process && (
+        {/* Process (only for n8n Automation) */}
+        {serviceKey === 'n8n-automation' && 'process' in service && service.process && (
           <div>
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">Notre Processus</h3>
             <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -522,8 +522,8 @@ export default function ServicesPage() {
           </div>
         )}
 
-        {/* Pricing (only for AI Automation) */}
-        {serviceKey === 'ai-automation' && 'pricing' in service && service.pricing && (
+        {/* Pricing (only for n8n Automation) */}
+        {serviceKey === 'n8n-automation' && 'pricing' in service && service.pricing && (
           <div>
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">Nos Tarifs</h3>
             <div className="grid-cols-1 md:grid-cols-3">

@@ -35,34 +35,29 @@ export default function AboutPage() {
   const translations = {
     fr: {
       hero: {
-        title: 'À propos de l\'Agence AI',
-        subtitle: 'Nous sommes une équipe passionnée d\'experts en intelligence artificielle et développement web, dédiée à transformer votre vision en réalité digitale.',
+        title: 'À Propos de Vibrance Online',
+        subtitle: 'Nous sommes une équipe passionnée d\'experts en développement web et automation avec n8n, dédiée à transformer votre vision en réalité digitale.',
         cta: 'Découvrir notre équipe'
       },
       mission: {
         title: 'Notre Mission',
-        subtitle: 'Révolutionner la façon dont les entreprises utilisent la technologie',
-        description: 'Nous croyons que l\'intelligence artificielle et l\'automation peuvent transformer radicalement la productivité et l\'efficacité des entreprises. Notre mission est de démocratiser ces technologies en créant des solutions accessibles, performantes et adaptées à chaque besoin.',
+        subtitle: 'Simplifier les processus et amplifier l\'impact',
+        description: 'Notre mission est de simplifier les processus métier et amplifier l\'impact des entreprises grâce au développement web et à l\'automation avec n8n. Nous rendons la technologie accessible, efficace et innovante pour tous.',
         values: [
+          {
+            icon: Target,
+            title: 'Accessibilité',
+            description: 'Nous rendons la technologie accessible à toutes les entreprises, quelle que soit leur taille.'
+          },
+          {
+            icon: Zap,
+            title: 'Efficacité',
+            description: 'Nous optimisons vos processus pour maximiser votre productivité et réduire les coûts.'
+          },
           {
             icon: Lightbulb,
             title: 'Innovation',
-            description: 'Nous repoussons constamment les limites de la technologie pour créer des solutions avant-gardistes.'
-          },
-          {
-            icon: Shield,
-            title: 'Qualité',
-            description: 'Chaque projet est réalisé avec le plus grand soin et selon les plus hauts standards de qualité.'
-          },
-          {
-            icon: Heart,
-            title: 'Passion',
-            description: 'Notre passion pour la technologie se reflète dans chaque solution que nous créons.'
-          },
-          {
-            icon: Target,
-            title: 'Excellence',
-            description: 'Nous visons l\'excellence dans chaque aspect de notre travail et de nos relations clients.'
+            description: 'Nous utilisons les dernières technologies, notamment n8n, pour créer des solutions innovantes.'
           }
         ]
       },
@@ -71,16 +66,15 @@ export default function AboutPage() {
         subtitle: 'Des experts passionnés à votre service',
         members: [
           {
-            name: 'Alexandre Dubois',
-            role: 'CEO & Fondateur',
-            description: 'Expert en IA avec 10 ans d\'expérience dans la transformation digitale des entreprises.',
-            image: 'AD',
+            name: 'Keensley Phildor',
+            role: 'Fondateur & CEO',
+            description: 'Fondateur de Vibrance Online, expert en développement web et automation avec n8n. Passionné par la simplification des processus métier et l\'innovation technologique.',
+            image: 'KP',
             social: {
-              linkedin: 'https://linkedin.com/in/alexandre-dubois',
-              twitter: 'https://twitter.com/alex_dubois',
-              email: 'alexandre@agence-ai.fr'
+              linkedin: 'https://linkedin.com/in/keensley-phildor',
+              email: 'keensley@vibranceonline.com'
             },
-            skills: ['Leadership', 'IA Strategy', 'Business Development']
+            skills: ['Leadership', 'Web Development', 'n8n Automation', 'Business Strategy']
           },
           {
             name: 'Sophie Martin',
@@ -90,7 +84,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/sophie-martin',
               github: 'https://github.com/sophie-martin',
-              email: 'sophie@agence-ai.fr'
+              email: 'sophie@vibranceonline.com'
             },
             skills: ['Machine Learning', 'Python', 'Architecture']
           },
@@ -102,7 +96,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/thomas-chen',
               github: 'https://github.com/thomas-chen',
-              email: 'thomas@agence-ai.fr'
+              email: 'thomas@vibranceonline.com'
             },
             skills: ['React/Next.js', 'Node.js', 'Cloud']
           },
@@ -114,7 +108,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/marie-leroy',
               twitter: 'https://twitter.com/marie_leroy',
-              email: 'marie@agence-ai.fr'
+              email: 'marie@vibranceonline.com'
             },
             skills: ['UX Design', 'UI Design', 'Prototyping']
           },
@@ -126,7 +120,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/david-rodriguez',
               github: 'https://github.com/david-rodriguez',
-              email: 'david@agence-ai.fr'
+              email: 'david@vibranceonline.com'
             },
             skills: ['Data Science', 'Python', 'Statistics']
           },
@@ -137,7 +131,7 @@ export default function AboutPage() {
             image: 'EW',
             social: {
               linkedin: 'https://linkedin.com/in/emma-wilson',
-              email: 'emma@agence-ai.fr'
+              email: 'emma@vibranceonline.com'
             },
             skills: ['Project Management', 'Agile', 'Communication']
           }
@@ -182,12 +176,12 @@ export default function AboutPage() {
       story: {
         title: 'Notre Histoire',
         subtitle: 'De l\'idée à la réalité',
-        content: 'Fondée en 2019 par Alexandre Dubois, l\'Agence AI est née d\'une vision simple : démocratiser l\'intelligence artificielle pour les entreprises de toutes tailles. Ce qui a commencé comme une petite équipe de 3 personnes dans un bureau parisien est devenu une agence reconnue avec plus de 25 experts et des clients dans toute l\'Europe. Notre croissance s\'est construite sur la confiance de nos clients et notre engagement à fournir des solutions qui transforment réellement leur façon de travailler.',
+        content: 'Fondée par Keensley Phildor, Vibrance Online est née d\'une vision simple : simplifier les processus métier et amplifier l\'impact des entreprises grâce au développement web et à l\'automation avec n8n. Notre mission est de rendre la technologie accessible, efficace et innovante pour toutes les entreprises, quelle que soit leur taille.',
         milestones: [
           {
-            year: '2019',
+            year: '2024',
             title: 'Fondation',
-            description: 'Création de l\'Agence AI avec 3 co-fondateurs'
+            description: 'Création de Vibrance Online par Keensley Phildor'
           },
           {
             year: '2020',
@@ -225,34 +219,29 @@ export default function AboutPage() {
     },
     en: {
       hero: {
-        title: 'About AI Agency',
-        subtitle: 'We are a passionate team of AI and web development experts, dedicated to transforming your vision into digital reality.',
+        title: 'About Vibrance Online',
+        subtitle: 'We are a passionate team of web development and n8n automation experts, dedicated to transforming your vision into digital reality.',
         cta: 'Discover our team'
       },
       mission: {
         title: 'Our Mission',
-        subtitle: 'Revolutionizing how businesses use technology',
-        description: 'We believe that artificial intelligence and automation can radically transform business productivity and efficiency. Our mission is to democratize these technologies by creating accessible, performant solutions tailored to each need.',
+        subtitle: 'Simplify processes and amplify impact',
+        description: 'Our mission is to simplify business processes and amplify the impact of companies through web development and automation with n8n. We make technology accessible, efficient, and innovative for everyone.',
         values: [
+          {
+            icon: Target,
+            title: 'Accessibility',
+            description: 'We make technology accessible to all businesses, regardless of their size.'
+          },
+          {
+            icon: Zap,
+            title: 'Efficiency',
+            description: 'We optimize your processes to maximize your productivity and reduce costs.'
+          },
           {
             icon: Lightbulb,
             title: 'Innovation',
-            description: 'We constantly push the boundaries of technology to create cutting-edge solutions.'
-          },
-          {
-            icon: Shield,
-            title: 'Quality',
-            description: 'Every project is carried out with the greatest care and according to the highest quality standards.'
-          },
-          {
-            icon: Heart,
-            title: 'Passion',
-            description: 'Our passion for technology is reflected in every solution we create.'
-          },
-          {
-            icon: Target,
-            title: 'Excellence',
-            description: 'We aim for excellence in every aspect of our work and client relationships.'
+            description: 'We use the latest technologies, including n8n, to create innovative solutions.'
           }
         ]
       },
@@ -261,16 +250,15 @@ export default function AboutPage() {
         subtitle: 'Passionate experts at your service',
         members: [
           {
-            name: 'Alexandre Dubois',
-            role: 'CEO & Founder',
-            description: 'AI expert with 10 years of experience in digital transformation of businesses.',
-            image: 'AD',
+            name: 'Keensley Phildor',
+            role: 'Founder & CEO',
+            description: 'Founder of Vibrance Online, expert in web development and automation with n8n. Passionate about simplifying business processes and technological innovation.',
+            image: 'KP',
             social: {
-              linkedin: 'https://linkedin.com/in/alexandre-dubois',
-              twitter: 'https://twitter.com/alex_dubois',
-              email: 'alexandre@agence-ai.fr'
+              linkedin: 'https://linkedin.com/in/keensley-phildor',
+              email: 'keensley@vibranceonline.com'
             },
-            skills: ['Leadership', 'AI Strategy', 'Business Development']
+            skills: ['Leadership', 'Web Development', 'n8n Automation', 'Business Strategy']
           },
           {
             name: 'Sophie Martin',
@@ -280,7 +268,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/sophie-martin',
               github: 'https://github.com/sophie-martin',
-              email: 'sophie@agence-ai.fr'
+              email: 'sophie@vibranceonline.com'
             },
             skills: ['Machine Learning', 'Python', 'Architecture']
           },
@@ -292,7 +280,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/thomas-chen',
               github: 'https://github.com/thomas-chen',
-              email: 'thomas@agence-ai.fr'
+              email: 'thomas@vibranceonline.com'
             },
             skills: ['React/Next.js', 'Node.js', 'Cloud']
           },
@@ -304,7 +292,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/marie-leroy',
               twitter: 'https://twitter.com/marie_leroy',
-              email: 'marie@agence-ai.fr'
+              email: 'marie@vibranceonline.com'
             },
             skills: ['UX Design', 'UI Design', 'Prototyping']
           },
@@ -316,7 +304,7 @@ export default function AboutPage() {
             social: {
               linkedin: 'https://linkedin.com/in/david-rodriguez',
               github: 'https://github.com/david-rodriguez',
-              email: 'david@agence-ai.fr'
+              email: 'david@vibranceonline.com'
             },
             skills: ['Data Science', 'Python', 'Statistics']
           },
@@ -327,7 +315,7 @@ export default function AboutPage() {
             image: 'EW',
             social: {
               linkedin: 'https://linkedin.com/in/emma-wilson',
-              email: 'emma@agence-ai.fr'
+              email: 'emma@vibranceonline.com'
             },
             skills: ['Project Management', 'Agile', 'Communication']
           }
@@ -372,12 +360,12 @@ export default function AboutPage() {
       story: {
         title: 'Our Story',
         subtitle: 'From idea to reality',
-        content: 'Founded in 2019 by Alexandre Dubois, AI Agency was born from a simple vision: democratize artificial intelligence for businesses of all sizes. What started as a small team of 3 people in a Paris office has become a recognized agency with over 25 experts and clients across Europe. Our growth has been built on our clients\' trust and our commitment to providing solutions that truly transform their way of working.',
+        content: 'Founded by Keensley Phildor, Vibrance Online was born from a simple vision: simplify business processes and amplify the impact of companies through web development and automation with n8n. Our mission is to make technology accessible, efficient, and innovative for all businesses, regardless of their size.',
         milestones: [
           {
-            year: '2019',
+            year: '2024',
             title: 'Foundation',
-            description: 'Creation of AI Agency with 3 co-founders'
+            description: 'Creation of Vibrance Online by Keensley Phildor'
           },
           {
             year: '2020',

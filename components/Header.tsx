@@ -37,17 +37,17 @@ const Header: React.FC<HeaderProps> = () => {
   const navigation = [
     { name: t('nav.home'), href: '/', key: 'home' },
     { name: t('nav.about'), href: '/about', key: 'about' },
-    { 
-      name: t('nav.services'), 
-      href: '/services', 
-      key: 'services',
-      children: [
-        { name: t('services.webDev.title'), href: '/services/web-development', key: 'web-dev' },
-        { name: t('services.aiAutomation.title'), href: '/services/ai-automation', key: 'ai-automation' },
-        { name: t('services.consulting.title'), href: '/services/digital-consulting', key: 'digital-consulting' },
-        { name: t('services.training.title'), href: '/services/training', key: 'training' },
-      ]
-    },
+        { 
+          name: t('nav.services'), 
+          href: '/services', 
+          key: 'services',
+          children: [
+            { name: t('services.webDev.title'), href: '/services/web-development', key: 'web-dev' },
+            { name: t('services.n8nAutomation.title'), href: '/services/n8n-automation', key: 'n8n-automation' },
+            { name: t('services.consulting.title'), href: '/services/digital-consulting', key: 'digital-consulting' },
+            { name: t('services.training.title'), href: '/services/training', key: 'training' },
+          ]
+        },
     { name: t('nav.portfolio'), href: '/portfolio', key: 'portfolio' },
     { name: t('nav.blog'), href: '/blog', key: 'blog' },
     { name: t('nav.contact'), href: '/contact', key: 'contact' },
@@ -64,10 +64,10 @@ const Header: React.FC<HeaderProps> = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">AI</span>
+              <span className="text-white font-bold text-xl">VO</span>
             </div>
             <span className="text-xl font-bold text-gray-900">
-              {locale === 'fr' ? 'Agence AI' : 'AI Agency'}
+              Vibrance Online
             </span>
           </Link>
 

@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 // Métadonnées par défaut
 export const defaultMetadata: Metadata = {
   title: {
-    default: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    template: '%s | Agence AI'
+    default: 'Vibrance Online - Développement Web & Automation avec n8n',
+    template: '%s | Vibrance Online'
   },
-  description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital pour propulser votre croissance.',
+  description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
   keywords: [
     'agence web',
     'automation IA',
@@ -19,15 +19,15 @@ export const defaultMetadata: Metadata = {
     'B2B',
     'solutions IA'
   ],
-  authors: [{ name: 'Agence AI' }],
-  creator: 'Agence AI',
-  publisher: 'Agence AI',
+  authors: [{ name: 'Vibrance Online' }],
+  creator: 'Vibrance Online',
+  publisher: 'Vibrance Online',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://agence-ai.fr'),
+  metadataBase: new URL('https://vibranceonline.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -38,25 +38,25 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://agence-ai.fr',
-    title: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital.',
-    siteName: 'Agence AI',
+    url: 'https://vibranceonline.com',
+    title: 'Vibrance Online - Développement Web & Automation avec n8n',
+    description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
+    siteName: 'Vibrance Online',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Agence AI - Solutions d\'Automation IA',
+        alt: 'Vibrance Online - Développement Web & Automation avec n8n',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure.',
+    title: 'Vibrance Online - Développement Web & Automation avec n8n',
+    description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
     images: ['/images/twitter-image.jpg'],
-    creator: '@agence_ai',
+    creator: '@vibranceonline',
   },
   robots: {
     index: true,
@@ -79,39 +79,39 @@ export const defaultMetadata: Metadata = {
 // Métadonnées spécifiques pour chaque page
 export const pageMetadata = {
   home: {
-    title: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital.',
-    keywords: ['agence web', 'automation IA', 'intelligence artificielle', 'développement web', 'consulting digital']
+    title: 'Vibrance Online - Développement Web & Automation avec n8n',
+    description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
+    keywords: ['vibrance online', 'développement web', 'automation n8n', 'n8n workflows', 'agence web']
   },
   
   about: {
-    title: 'À propos - Agence AI',
-    description: 'Découvrez notre équipe d\'experts en IA et notre mission de transformer les entreprises avec l\'intelligence artificielle.',
-    keywords: ['équipe IA', 'experts intelligence artificielle', 'mission agence', 'valeurs entreprise']
+    title: 'À propos - Vibrance Online',
+    description: 'Découvrez notre équipe d\'experts en développement web et automation avec n8n. Notre mission est de simplifier vos processus et amplifier votre impact.',
+    keywords: ['équipe vibrance online', 'experts n8n', 'mission entreprise', 'valeurs accessibilité efficacité innovation']
   },
   
   services: {
-    title: 'Services - Automation IA et Développement Web',
-    description: 'Nos services d\'automation IA, développement web, consulting digital et formation pour propulser votre entreprise.',
-    keywords: ['services automation IA', 'développement web', 'consulting digital', 'formation IA', 'RPA']
+    title: 'Services - Développement Web & Automation avec n8n',
+    description: 'Nos services de développement web, automation avec n8n, optimisation de processus et consulting pour propulser votre entreprise.',
+    keywords: ['services n8n', 'développement web', 'automation workflows', 'optimisation processus', 'consulting digital']
   },
   
   portfolio: {
-    title: 'Portfolio - Nos Réalisations en Automation IA',
-    description: 'Découvrez nos projets d\'automation IA et de développement web qui ont transformé nos clients.',
-    keywords: ['projets IA', 'réalisations automation', 'cas d\'usage', 'clients satisfaits']
+    title: 'Portfolio - Nos Réalisations',
+    description: 'Découvrez nos projets de développement web et d\'automation avec n8n qui ont transformé nos clients.',
+    keywords: ['projets web', 'réalisations n8n', 'cas d\'usage', 'clients satisfaits']
   },
   
   contact: {
-    title: 'Contact - Agence AI',
-    description: 'Contactez-nous pour discuter de votre projet d\'automation IA. Devis gratuit et conseil personnalisé.',
-    keywords: ['contact agence IA', 'devis gratuit', 'conseil automation', 'projet IA']
+    title: 'Contact - Vibrance Online',
+    description: 'Contactez-nous pour discuter de votre projet de développement web ou d\'automation avec n8n. Devis gratuit et conseil personnalisé.',
+    keywords: ['contact vibrance online', 'devis gratuit', 'conseil n8n', 'projet web']
   },
   
   pricing: {
-    title: 'Tarifs - Plans Automation IA',
-    description: 'Découvrez nos tarifs et plans pour l\'automation IA. Solutions adaptées à votre budget et vos besoins.',
-    keywords: ['tarifs automation IA', 'plans agence', 'prix développement', 'coût projet IA']
+    title: 'Tarifs - Plans Services',
+    description: 'Découvrez nos tarifs et plans pour le développement web et l\'automation avec n8n. Solutions adaptées à votre budget et vos besoins.',
+    keywords: ['tarifs développement web', 'plans n8n', 'prix automation', 'coût projet']
   }
 };
 

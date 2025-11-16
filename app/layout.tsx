@@ -18,31 +18,33 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    template: '%s | Agence AI'
+    default: 'Vibrance Online - Développement Web & Automation avec n8n',
+    template: '%s | Vibrance Online'
   },
-  description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital pour propulser votre croissance.',
+  description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n. Solutions sur mesure pour votre entreprise.',
   keywords: [
-    'agence web',
-    'automation IA',
-    'intelligence artificielle',
+    'vibrance online',
     'développement web',
+    'automation n8n',
+    'n8n workflows',
+    'agence web',
+    'e-commerce',
+    'applications web',
+    'optimisation processus',
     'consulting digital',
     'transformation digitale',
-    'machine learning',
-    'RPA',
-    'B2B',
-    'solutions IA'
+    'workflow automation',
+    'B2B'
   ],
-  authors: [{ name: 'Agence AI' }],
-  creator: 'Agence AI',
-  publisher: 'Agence AI',
+  authors: [{ name: 'Vibrance Online' }],
+  creator: 'Vibrance Online',
+  publisher: 'Vibrance Online',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://agence-ai.fr'),
+  metadataBase: new URL('https://vibranceonline.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -53,25 +55,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://agence-ai.fr',
-    title: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital.',
-    siteName: 'Agence AI',
+    url: 'https://vibranceonline.com',
+    title: 'Vibrance Online - Développement Web & Automation avec n8n',
+    description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
+    siteName: 'Vibrance Online',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Agence AI - Solutions d\'Automation IA',
+        alt: 'Vibrance Online - Développement Web & Automation avec n8n',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure.',
+    title: 'Vibrance Online - Développement Web & Automation avec n8n',
+    description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
     images: ['/images/twitter-image.jpg'],
-    creator: '@agence_ai',
+    creator: '@vibranceonline',
   },
   robots: {
     index: true,

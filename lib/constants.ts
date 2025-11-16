@@ -1,27 +1,27 @@
 // Constantes de l'application
 
 export const SITE_CONFIG = {
-  name: 'Agence AI',
-  url: 'https://agence-ai.fr',
-  description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure',
+  name: 'Vibrance Online',
+  url: 'https://vibranceonline.com',
+  description: 'Simplifiez vos processus, amplifiez votre impact. Développement web et automation avec n8n.',
   logo: '/images/logo.png',
   favicon: '/favicon.ico',
 } as const;
 
 export const CONTACT_INFO = {
-  email: 'contact@agence-ai.fr',
+  email: 'contact@vibranceonline.com',
   phone: '+33 1 23 45 67 89',
   address: '123 Rue de l\'Innovation, 75001 Paris, France',
   hours: 'Lun - Ven: 9h00 - 18h00',
 } as const;
 
 export const SOCIAL_LINKS = {
-  linkedin: 'https://linkedin.com/company/agence-ai',
-  twitter: 'https://twitter.com/agence_ai',
-  github: 'https://github.com/agence-ai',
-  instagram: 'https://instagram.com/agence_ai',
-  facebook: 'https://facebook.com/agence-ai',
-  youtube: 'https://youtube.com/agence-ai',
+  linkedin: 'https://linkedin.com/company/vibrance-online',
+  twitter: 'https://twitter.com/vibranceonline',
+  github: 'https://github.com/vibrance-online',
+  instagram: 'https://instagram.com/vibranceonline',
+  facebook: 'https://facebook.com/vibranceonline',
+  youtube: 'https://youtube.com/vibranceonline',
 } as const;
 
 export const SUPPORTED_LOCALES = [
@@ -31,10 +31,10 @@ export const SUPPORTED_LOCALES = [
 
 export const SERVICES = [
   {
-    id: 'ai-automation',
-    name: 'Automation IA',
-    description: 'Solutions d\'intelligence artificielle pour automatiser vos processus',
-    icon: 'Brain',
+    id: 'n8n-automation',
+    name: 'Automation avec n8n',
+    description: 'Automatisez vos workflows et connectez vos outils avec n8n',
+    icon: 'Zap',
   },
   {
     id: 'web-development',
@@ -58,7 +58,7 @@ export const SERVICES = [
 
 export const PROJECT_CATEGORIES = [
   { id: 'all', name: 'Tous les projets' },
-  { id: 'ai-automation', name: 'Automation IA' },
+  { id: 'n8n-automation', name: 'Automation avec n8n' },
   { id: 'web-development', name: 'Développement Web' },
   { id: 'mobile', name: 'Applications Mobile' },
   { id: 'ecommerce', name: 'E-commerce' },

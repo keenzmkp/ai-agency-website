@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://agence-ai.fr';
+  const baseUrl = 'https://vibranceonline.com';
   
   return [
     {
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/services/ai-automation`,
+      url: `${baseUrl}/services/n8n-automation`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,

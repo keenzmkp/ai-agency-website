@@ -15,7 +15,7 @@ export interface Project {
   title: string;
   description: string;
   client: string;
-  category: 'ai-automation' | 'web-development' | 'mobile' | 'ecommerce' | 'dashboard';
+  category: 'n8n-automation' | 'web-development' | 'mobile' | 'ecommerce' | 'dashboard';
   year: string;
   duration: string;
   team: string;

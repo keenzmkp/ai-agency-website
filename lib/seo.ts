@@ -11,42 +11,44 @@ interface SEOProps {
 }
 
 export const generateMetadata = ({
-  title = 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-  description = 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital pour propulser votre croissance.',
+  title = 'Vibrance Online - Développement Web & Automation avec n8n',
+  description = 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
   keywords = [
-    'agence web',
-    'automation IA',
-    'intelligence artificielle',
+    'vibrance online',
     'développement web',
+    'automation n8n',
+    'n8n workflows',
+    'agence web',
+    'e-commerce',
+    'applications web',
+    'optimisation processus',
     'consulting digital',
     'transformation digitale',
-    'machine learning',
-    'RPA',
-    'B2B',
-    'solutions IA'
+    'workflow automation',
+    'B2B'
   ],
   image = '/images/og-image.jpg',
-  url = 'https://agence-ai.fr',
+  url = 'https://vibranceonline.com',
   type = 'website',
   locale = 'fr_FR'
 }: SEOProps = {}): Metadata => {
-  const fullTitle = title.includes('Agence AI') ? title : `${title} | Agence AI`;
-  const fullUrl = url.startsWith('http') ? url : `https://agence-ai.fr${url}`;
-  const fullImage = image.startsWith('http') ? image : `https://agence-ai.fr${image}`;
+  const fullTitle = title.includes('Vibrance Online') ? title : `${title} | Vibrance Online`;
+  const fullUrl = url.startsWith('http') ? url : `https://vibranceonline.com${url}`;
+  const fullImage = image.startsWith('http') ? image : `https://vibranceonline.com${image}`;
 
   return {
     title: fullTitle,
     description,
     keywords: keywords.join(', '),
-    authors: [{ name: 'Agence AI' }],
-    creator: 'Agence AI',
-    publisher: 'Agence AI',
+    authors: [{ name: 'Vibrance Online' }],
+    creator: 'Vibrance Online',
+    publisher: 'Vibrance Online',
     formatDetection: {
       email: false,
       address: false,
       telephone: false,
     },
-    metadataBase: new URL('https://agence-ai.fr'),
+    metadataBase: new URL('https://vibranceonline.com'),
     alternates: {
       canonical: fullUrl,
       languages: {
@@ -60,7 +62,7 @@ export const generateMetadata = ({
       url: fullUrl,
       title: fullTitle,
       description,
-      siteName: 'Agence AI',
+      siteName: 'Vibrance Online',
       images: [
         {
           url: fullImage,
@@ -75,7 +77,7 @@ export const generateMetadata = ({
       title: fullTitle,
       description,
       images: [fullImage],
-      creator: '@agence_ai',
+      creator: '@vibranceonline',
     },
     robots: {
       index: true,
@@ -102,39 +104,39 @@ export const defaultSEO = generateMetadata();
 // Métadonnées spécifiques pour chaque page
 export const pageSEO = {
   home: generateMetadata({
-    title: 'Agence AI - Solutions d\'Automation IA pour Entreprises',
-    description: 'Transformez votre entreprise avec nos solutions d\'automation IA sur mesure. Développement web, intelligence artificielle, et consulting digital.',
-    keywords: ['agence web', 'automation IA', 'intelligence artificielle', 'développement web', 'consulting digital']
+    title: 'Vibrance Online - Développement Web & Automation avec n8n',
+    description: 'Simplifiez vos processus, amplifiez votre impact. Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n.',
+    keywords: ['vibrance online', 'développement web', 'automation n8n', 'n8n workflows', 'agence web']
   }),
   
   about: generateMetadata({
-    title: 'À propos - Agence AI',
-    description: 'Découvrez notre équipe d\'experts en IA et notre mission de transformer les entreprises avec l\'intelligence artificielle.',
-    keywords: ['équipe IA', 'experts intelligence artificielle', 'mission agence', 'valeurs entreprise']
+    title: 'À propos - Vibrance Online',
+    description: 'Découvrez notre équipe d\'experts en développement web et automation avec n8n. Notre mission est de simplifier vos processus et amplifier votre impact.',
+    keywords: ['équipe vibrance online', 'experts n8n', 'mission entreprise', 'valeurs accessibilité efficacité innovation']
   }),
   
   services: generateMetadata({
-    title: 'Services - Automation IA et Développement Web',
-    description: 'Nos services d\'automation IA, développement web, consulting digital et formation pour propulser votre entreprise.',
-    keywords: ['services automation IA', 'développement web', 'consulting digital', 'formation IA', 'RPA']
+    title: 'Services - Développement Web & Automation avec n8n',
+    description: 'Nos services de développement web, automation avec n8n, optimisation de processus et consulting pour propulser votre entreprise.',
+    keywords: ['services n8n', 'développement web', 'automation workflows', 'optimisation processus', 'consulting digital']
   }),
   
   portfolio: generateMetadata({
-    title: 'Portfolio - Nos Réalisations en Automation IA',
-    description: 'Découvrez nos projets d\'automation IA et de développement web qui ont transformé nos clients.',
-    keywords: ['projets IA', 'réalisations automation', 'cas d\'usage', 'clients satisfaits']
+    title: 'Portfolio - Nos Réalisations',
+    description: 'Découvrez nos projets de développement web et d\'automation avec n8n qui ont transformé nos clients.',
+    keywords: ['projets web', 'réalisations n8n', 'cas d\'usage', 'clients satisfaits']
   }),
   
   contact: generateMetadata({
-    title: 'Contact - Agence AI',
-    description: 'Contactez-nous pour discuter de votre projet d\'automation IA. Devis gratuit et conseil personnalisé.',
-    keywords: ['contact agence IA', 'devis gratuit', 'conseil automation', 'projet IA']
+    title: 'Contact - Vibrance Online',
+    description: 'Contactez-nous pour discuter de votre projet de développement web ou d\'automation avec n8n. Devis gratuit et conseil personnalisé.',
+    keywords: ['contact vibrance online', 'devis gratuit', 'conseil n8n', 'projet web']
   }),
   
   pricing: generateMetadata({
-    title: 'Tarifs - Plans Automation IA',
-    description: 'Découvrez nos tarifs et plans pour l\'automation IA. Solutions adaptées à votre budget et vos besoins.',
-    keywords: ['tarifs automation IA', 'plans agence', 'prix développement', 'coût projet IA']
+    title: 'Tarifs - Plans Services',
+    description: 'Découvrez nos tarifs et plans pour le développement web et l\'automation avec n8n. Solutions adaptées à votre budget et vos besoins.',
+    keywords: ['tarifs développement web', 'plans n8n', 'prix automation', 'coût projet']
   })
 };
 
@@ -164,14 +166,14 @@ export const generateSchemaOrg = ({
     name: title,
     description,
     url,
-    image: image || 'https://agence-ai.fr/images/og-image.jpg',
+    image: image || 'https://vibranceonline.com/images/og-image.jpg',
     publisher: {
       '@type': 'Organization',
-      name: 'Agence AI',
-      url: 'https://agence-ai.fr',
+      name: 'Vibrance Online',
+      url: 'https://vibranceonline.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://agence-ai.fr/images/logo.png'
+        url: 'https://vibranceonline.com/images/logo.png'
       }
     }
   };
@@ -183,7 +185,7 @@ export const generateSchemaOrg = ({
       dateModified: dateModified || datePublished,
       author: {
         '@type': 'Person',
-        name: author || 'Agence AI'
+        name: author || 'Vibrance Online'
       }
     };
   }
@@ -193,15 +195,15 @@ export const generateSchemaOrg = ({
       ...baseSchema,
       provider: {
         '@type': 'Organization',
-        name: 'Agence AI',
-        url: 'https://agence-ai.fr'
+        name: 'Vibrance Online',
+        url: 'https://vibranceonline.com'
       },
-      serviceType: 'Automation IA et Développement Web',
+      serviceType: 'Développement Web & Automation avec n8n',
       areaServed: 'France',
       availableChannel: {
         '@type': 'ServiceChannel',
-        serviceUrl: 'https://agence-ai.fr/contact',
-        serviceName: 'Contact Agence AI'
+        serviceUrl: 'https://vibranceonline.com/contact',
+        serviceName: 'Contact Vibrance Online'
       }
     };
   }
@@ -215,7 +217,7 @@ export const generateBlogMetadata = ({
   description,
   slug,
   date,
-  author = 'Agence AI',
+  author = 'Vibrance Online',
   tags = []
 }: {
   title: string;
@@ -228,7 +230,7 @@ export const generateBlogMetadata = ({
   return generateMetadata({
     title,
     description,
-    keywords: [...tags, 'blog', 'article', 'automation IA', 'intelligence artificielle'],
+    keywords: [...tags, 'blog', 'article', 'automation n8n', 'développement web'],
     url: `/blog/${slug}`,
     type: 'article',
     image: `/images/blog/${slug}.jpg`

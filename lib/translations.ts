@@ -15,8 +15,8 @@ export const translations = {
     // Homepage
     home: {
       hero: {
-        title: 'Transformez Votre Business avec l\'Intelligence Artificielle',
-        subtitle: 'Nous créons des solutions web innovantes et des automations IA sur mesure pour propulser votre entreprise vers l\'avenir.',
+        title: 'Simplifiez vos processus, amplifiez votre impact.',
+        subtitle: 'Vibrance Online est votre partenaire pour le développement web et l\'automation avec n8n. Nous créons des solutions sur mesure qui transforment votre façon de travailler.',
         cta: 'Découvrir nos services',
         ctaSecondary: 'Voir nos projets'
       },
@@ -51,14 +51,13 @@ export const translations = {
       },
       mission: {
         title: 'Notre Mission',
-        content: 'Accompagner les entreprises dans leur transformation digitale en créant des solutions innovantes et performantes.'
+        content: 'Simplifier les processus métier et amplifier l\'impact des entreprises grâce au développement web et à l\'automation avec n8n. Nous rendons la technologie accessible, efficace et innovante.'
       },
       values: {
         title: 'Nos Valeurs',
-        innovation: 'Innovation',
-        quality: 'Qualité',
-        collaboration: 'Collaboration',
-        excellence: 'Excellence'
+        accessibility: 'Accessibilité',
+        efficiency: 'Efficacité',
+        innovation: 'Innovation'
       },
       team: {
         title: 'Notre Équipe',
@@ -74,15 +73,15 @@ export const translations = {
       },
       webDev: {
         title: 'Développement Web',
-        description: 'Sites web modernes et performants'
+        description: 'Sites web professionnels, e-commerce et applications web sur mesure'
       },
-      aiAutomation: {
-        title: 'Automation IA',
-        description: 'Automatisez vos processus métier'
+      n8nAutomation: {
+        title: 'Automation avec n8n',
+        description: 'Automatisez vos workflows et connectez vos outils avec n8n'
       },
       consulting: {
-        title: 'Consulting Digital',
-        description: 'Stratégie et accompagnement'
+        title: 'Optimisation & Consulting',
+        description: 'Optimisation de processus et conseil stratégique'
       },
       training: {
         title: 'Formation',
@@ -231,9 +230,9 @@ export const translations = {
     // Homepage
     home: {
       hero: {
-        title: 'Transform Your Business with Artificial Intelligence',
-        subtitle: 'We create innovative web solutions and custom AI automations to propel your business into the future.',
-        cta: 'Discover our services',
+        title: 'Automate. Connect. Grow.',
+        subtitle: 'Vibrance Online is your partner for web development and automation with n8n. We create custom solutions that transform the way you work.',
+        cta: 'Explore Our Services',
         ctaSecondary: 'View our projects'
       },
       services: {
@@ -267,14 +266,13 @@ export const translations = {
       },
       mission: {
         title: 'Our Mission',
-        content: 'Accompany companies in their digital transformation by creating innovative and efficient solutions.'
+        content: 'Simplify business processes and amplify the impact of companies through web development and automation with n8n. We make technology accessible, efficient, and innovative.'
       },
       values: {
         title: 'Our Values',
-        innovation: 'Innovation',
-        quality: 'Quality',
-        collaboration: 'Collaboration',
-        excellence: 'Excellence'
+        accessibility: 'Accessibility',
+        efficiency: 'Efficiency',
+        innovation: 'Innovation'
       },
       team: {
         title: 'Our Team',
@@ -290,15 +288,15 @@ export const translations = {
       },
       webDev: {
         title: 'Web Development',
-        description: 'Modern and performant websites'
+        description: 'Professional websites, e-commerce, and custom web applications'
       },
-      aiAutomation: {
-        title: 'AI Automation',
-        description: 'Automate your business processes'
+      n8nAutomation: {
+        title: 'Automation with n8n',
+        description: 'Automate your workflows and connect your tools with n8n'
       },
       consulting: {
-        title: 'Digital Consulting',
-        description: 'Strategy and support'
+        title: 'Process Optimization & Consulting',
+        description: 'Process optimization and strategic consulting'
       },
       training: {
         title: 'Training',

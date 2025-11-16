@@ -50,12 +50,14 @@
     "typescript": "^5.0.0"
   },
   "keywords": [
-    "agence web",
-    "automation AI",
+    "vibrance online",
     "développement web",
-    "intelligence artificielle",
+    "automation n8n",
+    "n8n workflows",
+    "agence web",
+    "e-commerce",
     "B2B"
   ],
-  "author": "AI Agency",
+  "author": "Vibrance Online",
   "license": "MIT"
 }

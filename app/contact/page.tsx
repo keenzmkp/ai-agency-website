@@ -62,7 +62,7 @@ export default function ContactPage() {
         info: {
           address: '123 Rue de l\'Innovation, 75001 Paris, France',
           phone: '+33 1 23 45 67 89',
-          email: 'contact@agence-ai.fr',
+          email: 'contact@vibranceonline.com',
           hours: 'Lun - Ven: 9h00 - 18h00'
         }
       },
@@ -136,7 +136,7 @@ export default function ContactPage() {
             title: 'Email',
             description: 'Envoyez-nous un email détaillé',
             action: 'Envoyer un email',
-            href: 'mailto:contact@agence-ai.fr'
+            href: 'mailto:contact@vibranceonline.com'
           }
         ]
       },
@@ -174,12 +174,12 @@ export default function ContactPage() {
         title: 'Suivez-nous',
         subtitle: 'Restez informé de nos dernières actualités et innovations',
         platforms: [
-          { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/company/agence-ai', color: 'text-blue-600' },
-          { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/agence_ai', color: 'text-blue-400' },
-          { name: 'GitHub', icon: Github, href: 'https://github.com/agence-ai', color: 'text-gray-600' },
-          { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/agence_ai', color: 'text-pink-500' },
-          { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/agence-ai', color: 'text-blue-600' },
-          { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/agence-ai', color: 'text-red-600' }
+          { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/company/vibrance-online', color: 'text-blue-600' },
+          { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/vibranceonline', color: 'text-blue-400' },
+          { name: 'GitHub', icon: Github, href: 'https://github.com/vibrance-online', color: 'text-gray-600' },
+          { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/vibranceonline', color: 'text-pink-500' },
+          { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/vibranceonline', color: 'text-blue-600' },
+          { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/vibranceonline', color: 'text-red-600' }
         ]
       },
       cta: {
@@ -201,7 +201,7 @@ export default function ContactPage() {
         info: {
           address: '123 Innovation Street, 75001 Paris, France',
           phone: '+33 1 23 45 67 89',
-          email: 'contact@agence-ai.fr',
+          email: 'contact@vibranceonline.com',
           hours: 'Mon - Fri: 9:00 AM - 6:00 PM'
         }
       },
@@ -275,7 +275,7 @@ export default function ContactPage() {
             title: 'Email',
             description: 'Send us a detailed email',
             action: 'Send email',
-            href: 'mailto:contact@agence-ai.fr'
+            href: 'mailto:contact@vibranceonline.com'
           }
         ]
       },

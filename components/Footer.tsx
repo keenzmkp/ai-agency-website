@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
   // Traductions
   const translations = {
     fr: {
-      description: 'Votre partenaire de confiance pour la transformation digitale et l\'automation IA. Nous créons des solutions innovantes qui propulsent votre entreprise vers l\'avenir.',
+      description: 'Votre partenaire de confiance pour le développement web et l\'automation avec n8n. Nous simplifions vos processus et amplifions votre impact.',
       quickLinks: 'Liens rapides',
       services: 'Services',
       company: 'Entreprise',
@@ -29,13 +29,13 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
       contact: 'Contact',
       address: '123 Rue de l\'Innovation, 75001 Paris, France',
       phone: '+33 1 23 45 67 89',
-      email: 'contact@agence-ai.fr',
+      email: 'contact@vibranceonline.com',
       followUs: 'Suivez-nous',
       newsletter: 'Newsletter',
-      newsletterDescription: 'Recevez nos dernières actualités et conseils en automation IA.',
+      newsletterDescription: 'Recevez nos dernières actualités et conseils en développement web et automation n8n.',
       subscribe: 'S\'abonner',
       placeholder: 'Votre adresse email',
-      copyright: '© 2024 Agence AI. Tous droits réservés.',
+      copyright: '© 2024 Vibrance Online. Tous droits réservés.',
       privacy: 'Politique de confidentialité',
       terms: 'Conditions d\'utilisation',
       cookies: 'Politique des cookies',
@@ -45,12 +45,12 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
       portfolio: 'Portfolio',
       blog: 'Blog',
       webDev: 'Développement Web',
-      aiAutomation: 'Automation AI',
-      digitalConsulting: 'Consulting Digital',
+      aiAutomation: 'Automation avec n8n',
+      digitalConsulting: 'Optimisation & Consulting',
       training: 'Formation',
     },
     en: {
-      description: 'Your trusted partner for digital transformation and AI automation. We create innovative solutions that propel your business into the future.',
+      description: 'Your trusted partner for web development and automation with n8n. We simplify your processes and amplify your impact.',
       quickLinks: 'Quick Links',
       services: 'Services',
       company: 'Company',
@@ -58,13 +58,13 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
       contact: 'Contact',
       address: '123 Innovation Street, 75001 Paris, France',
       phone: '+33 1 23 45 67 89',
-      email: 'contact@agence-ai.fr',
+      email: 'contact@vibranceonline.com',
       followUs: 'Follow Us',
       newsletter: 'Newsletter',
-      newsletterDescription: 'Get our latest news and AI automation tips.',
+      newsletterDescription: 'Get our latest news and tips on web development and n8n automation.',
       subscribe: 'Subscribe',
       placeholder: 'Your email address',
-      copyright: '© 2024 AI Agency. All rights reserved.',
+      copyright: '© 2024 Vibrance Online. All rights reserved.',
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       cookies: 'Cookie Policy',
@@ -74,8 +74,8 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
       portfolio: 'Portfolio',
       blog: 'Blog',
       webDev: 'Web Development',
-      aiAutomation: 'AI Automation',
-      digitalConsulting: 'Digital Consulting',
+      aiAutomation: 'Automation with n8n',
+      digitalConsulting: 'Process Optimization & Consulting',
       training: 'Training',
     }
   };
@@ -92,7 +92,7 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
 
   const services = [
     { name: t.webDev, href: '/services/web-development', key: 'web-dev' },
-    { name: t.aiAutomation, href: '/services/ai-automation', key: 'ai-automation' },
+    { name: t.aiAutomation, href: '/services/n8n-automation', key: 'n8n-automation' },
     { name: t.digitalConsulting, href: '/services/digital-consulting', key: 'digital-consulting' },
     { name: t.training, href: '/services/training', key: 'training' },
   ];
@@ -120,10 +120,10 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
 
   // Réseaux sociaux
   const socialLinks = [
-    { name: 'LinkedIn', href: 'https://linkedin.com/company/agence-ai', icon: Linkedin },
-    { name: 'Twitter', href: 'https://twitter.com/agence_ai', icon: Twitter },
-    { name: 'GitHub', href: 'https://github.com/agence-ai', icon: Github },
-    { name: 'Instagram', href: 'https://instagram.com/agence_ai', icon: Instagram },
+    { name: 'LinkedIn', href: 'https://linkedin.com/company/vibrance-online', icon: Linkedin },
+    { name: 'Twitter', href: 'https://twitter.com/vibranceonline', icon: Twitter },
+    { name: 'GitHub', href: 'https://github.com/vibrance-online', icon: Github },
+    { name: 'Instagram', href: 'https://instagram.com/vibranceonline', icon: Instagram },
   ];
 
   // Scroll vers le haut
@@ -139,10 +139,10 @@ const Footer: React.FC<FooterProps> = ({ locale = 'fr' }) => {
           <div className="footer-section">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AI</span>
+                <span className="text-white font-bold text-xl">VO</span>
               </div>
               <span className="text-xl font-bold text-white">
-                {locale === 'fr' ? 'Agence AI' : 'AI Agency'}
+                Vibrance Online
               </span>
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
